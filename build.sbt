@@ -1,12 +1,14 @@
 import scalapb.compiler.Version.scalapbVersion
 
-scalaVersion := "2.13.8"
+scalaVersion := "2.12.15"
 
 crossScalaVersions := Seq("2.12.15", "2.13.8", "3.1.2")
 
 ThisBuild / organization := "com.thesamet.scalapb"
 
 name := "scalapb-json4s"
+
+version := "0.12.1"
 
 ThisBuild / scalacOptions ++= Seq("-deprecation") ++ {
   CrossVersion.partialVersion(scalaVersion.value) match {
